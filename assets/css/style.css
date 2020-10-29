@@ -1,0 +1,185 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: .5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+  background-color: pink;
+  padding: .5em;
+}
+
+nav ul li {
+  margin-left: 8%;
+}
+
+nav ul li a {
+  color: #fff !important;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+header section {
+  text-align: center;
+  font-size: 3em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+header section div {
+  margin-top: 40vh;
+}
+
+main #about {
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: #fff;
+}
+
+main #about .imgAbout {
+  margin-left: 2rem;
+}
+
+main #about .imgAbout img[alt="test_my"] {
+  max-width: 400px !important;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+
+main #about .about {
+  padding: 2em;
+}
+
+main #about .about h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main #about .about p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+
+main #about .about .row {
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+}
+
+main #about .about .row div {
+  width: 50%;
+  text-align: justify;
+}
+
+main #about .about .row div h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+main #about .about .row div p {
+  font-size: .9em;
+}
+
+#projets, #labo, #contact {
+  height: 100vh;
+  padding: 2em;
+}
+
+#projets h3, #labo h3, #contact h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#projets p, #labo p, #contact p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+
+#contact {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact .imgContact {
+  width: 40%;
+  margin-left: 10vh;
+}
+
+#contact .imgContact img[alt="contactImg"] {
+  max-width: 400px !important;
+  height: auto;
+}
+
+#contact .contactForm {
+  height: 80vh;
+  margin-top: 2em;
+}
+
+#contact .contactForm form label {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: .5rem;
+  padding: .5rem;
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 65%;
+  padding: .5em;
+}
+
+footer ul li {
+  margin-left: 8%;
+}
+
+footer ul li a {
+  color: #fff !important;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=style.css.map */
