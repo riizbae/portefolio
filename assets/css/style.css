@@ -108,21 +108,34 @@ main #about .about .row div p {
   font-size: .9em;
 }
 
-#projets, #labo, #contact {
+#labo, #contact {
   height: 100vh;
   padding: 2em;
 }
 
-#projets h3, #labo h3, #contact h3 {
+#labo h3, #contact h3 {
   text-align: center;
   font-size: 2.5rem;
 }
 
-#projets p, #labo p, #contact p {
+#labo p, #contact p {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10vh;
+}
+
+#labo .row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 70vh;
+}
+
+#labo .row .card {
+  width: 30%;
+  height: 29vh;
 }
 
 #contact {
