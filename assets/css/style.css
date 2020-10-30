@@ -1,6 +1,7 @@
 body {
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 }
 
 nav {
@@ -34,9 +35,6 @@ nav ul li a {
 header {
   height: 100vh;
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-}
-
-header section {
   text-align: center;
   font-size: 3em;
   display: flex;
@@ -44,8 +42,23 @@ header section {
   justify-content: center;
 }
 
-header section div {
+header #container {
+  perspective: 50px;
+}
+
+header #container #effet1 {
   margin-top: 40vh;
+  padding: .5em;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  height: 11vh;
+}
+
+header #container #effet1 h2 {
+  color: lightgrey;
 }
 
 main #about {
