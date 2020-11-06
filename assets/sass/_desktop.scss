@@ -202,10 +202,123 @@ main{
     .contactForm{
         height:80vh;
         margin-top:2em;
+        
+        width:50%;
 
-        form{
-            label{
-                font-weight:bold;
+        form {
+            width: 90%;
+            display:flex;
+            flex-flow: column;  
+            margin:auto;
+  
+
+          .fieldsetFirst{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+
+
+            div{
+                width:48%;
+                position:relative;
+                overflow:hidden;
+
+                input{
+                    width: 100%;
+                    padding: .5rem;
+                    background:lightblue;
+                    margin: 1.5rem 0;
+                    border: .3 rem solid rgb(0, 108, 170);
+                    color: black;
+                    font-size: 1.125rem;
+
+
+                    &:focus{
+                        background: lightblue;
+                        outline: 0;
+
+                        +label{
+                            top: .4em;
+                            font-size: 1.125rem;
+                            transform: translateY(0);
+                            left: 0;
+                            opacity: 1;
+                            color:#fff;
+                        }
+
+                        &:hover{
+                            +label {
+                                top: .4em;
+                                font-size: 1.125rem;
+                                transform: translateY(0);
+                                left: 0;
+                                opacity: 1;
+                                color:black;
+                            }
+                        }
+
+                        &:valid{
+                            +label{
+                                top: 0;
+                                font-size: 1.125rem;
+                                transform: translateY(0);
+                                left: 0;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                label{
+                    position: absolute;
+                    opacity: 0.6;
+                    font-size: 1.25rem;
+                    left: 1rem;
+                    pointer-events: none;
+                    color: black;
+                    transition: all .22s;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                }
+            
+            }
+
+        }
+
+
+        .fieldsetSecond{
+            display:flex;
+            flex-flow:column;
+            margin-bottom:1vh;
+
+            div{
+                width:100%;
+                position:relative;
+                overflow:hidden;
+
+                textarea{
+                    width: 100%;
+                    padding: 1.5rem;
+                    background: #222;
+                    margin: 1.5rem 0;
+                    border: none;
+                    color: #aaa;
+                    font-size: 1.125rem;
+                }
+
+                label{
+                    position: absolute;
+                    opacity: 0.6;
+                    font-size: 1.25rem;
+                    left: 1rem;
+                    pointer-events: none;
+                    color: #f2cb79;
+                    transition: all .22s;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                }
             }
         }
     }
@@ -242,4 +355,6 @@ footer{
                 }
             }
         }
+    }
 }
+

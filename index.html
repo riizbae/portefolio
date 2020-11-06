@@ -115,20 +115,40 @@
            
            <article class="contactForm">
                 <h3>Contact</h3>
-                <div>
-                    <blockquote>
-                    </blockquote>
-                </div>
-               <form>
-                   <label>Nom Prénom</label>
-                   <input type="text" name="" id="">
-
-                   <label>adresse mail :</label>
-                   <input type="email" name="" id="">
-
-                   <label>message :</label>
-                   <textarea name="" id="" cols="30" rows="10"></textarea>
-                   </form>
+               <form class="bottom">
+                   <fieldset class="fieldsetFirst">
+                        <div>
+                            <input id="name" name="name" type="text" required>
+                            <label for="name">Nom</label>
+                        </div>
+                        <div>
+                            <input id="firstname" name="firstname" type="text" required>
+                            <label for="firstname">Prénom</label>
+                        </div>
+                        <div>
+                            <input type="text" name="society" id="society">
+                            <label for="society">Société</label>
+                        </div>
+                        <div>
+                            <input id="tel" name="tel" type="text" required>
+                            <label for="tel">téléphone</label>
+                        </div>
+                        <div>
+                            <input type="text" name="mail" id="mail" required>
+                            <label for="mail">e-mail</label>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" id="subject" required>
+                            <label for="subject">Sujet :</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldsetSecond">
+                        <div>
+                            <textarea id="message" name="text" required rows="10" cols="100%"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                   </fieldset>
+                </form>      
            </article>
        </section>
    </main>

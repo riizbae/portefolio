@@ -186,13 +186,118 @@ main #about .about .row div p {
 #contact .contactForm {
   height: 80vh;
   margin-top: 2em;
+  width: 50%;
 }
 
-#contact .contactForm form label {
-  font-weight: bold;
+#contact .contactForm form {
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
 }
 
-footer {
+#contact .contactForm form .fieldsetFirst {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contact .contactForm form .fieldsetFirst div {
+  width: 48%;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact .contactForm form .fieldsetFirst div input {
+  width: 100%;
+  padding: .5rem;
+  background: lightblue;
+  margin: 1.5rem 0;
+  border: 0.3 rem solid #006caa;
+  color: black;
+  font-size: 1.125rem;
+}
+
+#contact .contactForm form .fieldsetFirst div input:focus {
+  background: lightblue;
+  outline: 0;
+}
+
+#contact .contactForm form .fieldsetFirst div input:focus + label {
+  top: .4em;
+  font-size: 1.125rem;
+  transform: translateY(0);
+  left: 0;
+  opacity: 1;
+  color: #fff;
+}
+
+#contact .contactForm form .fieldsetFirst div input:focus:hover + label {
+  top: .4em;
+  font-size: 1.125rem;
+  transform: translateY(0);
+  left: 0;
+  opacity: 1;
+  color: black;
+}
+
+#contact .contactForm form .fieldsetFirst div input:focus:valid + label {
+  top: 0;
+  font-size: 1.125rem;
+  transform: translateY(0);
+  left: 0;
+  opacity: 1;
+}
+
+#contact .contactForm form .fieldsetFirst div label {
+  position: absolute;
+  opacity: 0.6;
+  font-size: 1.25rem;
+  left: 1rem;
+  pointer-events: none;
+  color: black;
+  transition: all .22s;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+#contact .contactForm form .fieldsetSecond {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 1vh;
+}
+
+#contact .contactForm form .fieldsetSecond div {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact .contactForm form .fieldsetSecond div textarea {
+  width: 100%;
+  padding: 1.5rem;
+  background: #222;
+  margin: 1.5rem 0;
+  border: none;
+  color: #aaa;
+  font-size: 1.125rem;
+}
+
+#contact .contactForm form .fieldsetSecond div label {
+  position: absolute;
+  opacity: 0.6;
+  font-size: 1.25rem;
+  left: 1rem;
+  pointer-events: none;
+  color: #f2cb79;
+  transition: all .22s;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+#contact footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -203,7 +308,7 @@ footer {
   justify-content: space-between;
 }
 
-footer ul {
+#contact footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -213,11 +318,11 @@ footer ul {
   padding: .5em;
 }
 
-footer ul li {
+#contact footer ul li {
   margin-left: 8%;
 }
 
-footer ul li a {
+#contact footer ul li a {
   color: #fff !important;
   font-weight: bold;
   text-decoration: none !important;
